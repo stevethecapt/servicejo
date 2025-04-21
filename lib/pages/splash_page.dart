@@ -23,11 +23,15 @@ class _SplashPageState extends State<SplashPage> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
+      backgroundColor: Colors.blue, // Background biru
       body: Center(
-        child: Text(
-          'ServiceJo',
-          style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Image.asset('lib/img/servicejo.png', width: 150),
+            const SizedBox(height: 8),
+          ],
         ),
       ),
     );
